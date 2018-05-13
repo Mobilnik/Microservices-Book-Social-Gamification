@@ -8,6 +8,7 @@ public enum Badge {
     // Badges depending on score
     BRONZE_MULTIPLICATOR,
     SILVER_MULTIPLICATOR,
+    LUCKY_NUMBER,
     GOLD_MULTIPLICATOR,
 
     // Other badges won for different conditions

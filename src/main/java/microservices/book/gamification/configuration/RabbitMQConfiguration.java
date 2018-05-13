@@ -33,7 +33,7 @@ public class RabbitMQConfiguration implements RabbitListenerConfigurer {
     //Links together queue and topic exchange with a routing key.
     @Bean
     Binding binding(final Queue queue, final TopicExchange exchange,
-                    @Value("${multiplication.anything.routingkey}") final String routingKey) {
+                    @Value("${multiplication.anything.routing-key}") final String routingKey) {
         return BindingBuilder.bind(queue).to(exchange).with(routingKey);
     }
 

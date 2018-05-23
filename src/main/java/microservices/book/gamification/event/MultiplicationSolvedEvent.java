@@ -19,4 +19,9 @@ public class MultiplicationSolvedEvent implements Serializable {
     private final Long multiplicationResultAttemptId;
     private final Long userId;
     private final boolean correct;
+
+    //No Args Constructor For JSON
+    MultiplicationSolvedEvent(){
+        this (null, null, false);
+    }
 }
